@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <h1>WEATHER APP</h1>
+      </div>
+      <div class="btn">
+        <button class="btncss btn-1" onclick="yourweatherBtnfunc()">
+          Your Weather
+        </button>
+        <button class="btncss btn-2" onclick="searchweatherBtnfunc()">
+          Search Weather
+        </button>
+      </div>
+      <!-- Grant and Weather -->
+      <div class="yourWeather">
+        <!-- Grant Weather -->
+        <div class="active grantAccess">
+          <div class="circlediv">
+            <div class="circle">
+              <i
+                class="fa fa-map-marker"
+                style="font-size: 35px; color: white"
+              ></i>
+            </div>
+          </div>
+          <div class="permission">
+            <h2>Grant Location Access</h2>
+            <p>Allow Access To Get Weather Information</p>
+            <!-- button -->
+            <button class="btncss grant" onclick="permissiongrant()">
+              GRANT ACCESS
+            </button>
+          </div>
+        </div>
+        <!-- Weather Details -->
+        <div class="active weather">
+          <div class="details1">
+            <div class="cityName">
+              <!-- cityname update -->
+              <h2 class="cityName cityUpdate"></h2>
+              <!-- country image update -->
+              <img
+                class="countryIcon"
+                height="30px"
+                width="30px"
+                style="margin-left: 8px"
+              />
+            </div>
+            <!-- weather type name update -->
+            <h3 class="weatherType"></h3>
+            <!-- weather type image update -->
+            <img class="temp-type" />
+            <!-- temp-update -->
+            <h1 class="temp"></h1>
+          </div>
+          <div class="details2">
+            <div class="windspeed">
+              <img src="./assests/wind.png" height="55px" />
+              <h2>WINDSPEED</h2>
+              <!-- windspeed update -->
+              <h3 class="windspeedValue"></h3>
+            </div>
+            <div class="humidity">
+              <img src="./assests/humidity.png" height="55px" />
+              <h2>HUMIDITY</h2>
+              <!-- humidity update -->
+              <h3 class="humidityValue"></h3>
+            </div>
+            <div class="clouds">
+              <img src="./assests/cloud.png" height="55px" />
+              <h2>CLOUDS</h2>
+              <!-- cloud update -->
+              <h3 class="cloudValue"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Search City -->
+      <div class="active searchWeather">
+        <input id="citySubmit" type="text" placeholder="Search For City" />
+        <button class="circle2" onclick="searchweatherinfo()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5q0-1.875-1.312-3.187T9.5 5Q7.625 5 6.313 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14"
+            />
+          </svg>
+        </button>
+        <div class="active weather">
+          <div class="details1">
+            <div class="cityName">
+              <!-- cityname update -->
+              <h2 class="cityName cityUpdate"></h2>
+              <!-- country image update -->
+              <img
+                class="countryIcon"
+                height="30px"
+                width="30px"
+                style="margin-left: 8px"
+              />
+            </div>
+            <!-- weather type name update -->
+            <h3 class="weatherType"></h3>
+            <!-- weather type image update -->
+            <img class="temp-type" />
+            <!-- temp-update -->
+            <h1 class="temp"></h1>
+          </div>
+          <div class="details2">
+            <div class="windspeed">
+              <img src="./assests/wind.png" height="55px" />
+              <h2>WINDSPEED</h2>
+              <!-- windspeed update -->
+              <h3 class="windspeedValue"></h3>
+            </div>
+            <div class="humidity">
+              <img src="./assests/humidity.png" height="55px" />
+              <h2>HUMIDITY</h2>
+              <!-- humidity update -->
+              <h3 class="humidityValue"></h3>
+            </div>
+            <div class="clouds">
+              <img src="./assests/cloud.png" height="55px" />
+              <h2>CLOUDS</h2>
+              <!-- cloud update -->
+              <h3 class="cloudValue"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="active loader">
+        <img src="./assests/loading.gif" width="150px" height="150px" />
+        <p>Loading</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

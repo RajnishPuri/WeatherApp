@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(321deg, rgba(0, 129, 255, 1) 0%, rgba(0, 129, 255, 1) 0%, rgba(7, 58, 187, 1) 100%);
+    color: white;
+    /* display: flex;
+    justify-content: center;
+    margin: auto 0; */
+    overflow-x: hidden;
+}
+
+/* Heading & Buttons CSS */
+
+.heading{
+    width: 100vw;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    margin: auto;
+}
+
+.btncss{
+    appearance: none;
+    height: 30px;
+    width: auto;
+    /* padding: 10px; */
+    /* text-align: center; */
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.btncss:hover{
+    background:rgb(127, 179, 231);
+    border-radius: 6px;
+    
+}
+
+/* Permission CSS */
+
+.grantAccess{
+    position: absolute;
+    /* scale: 1; */
+    margin-top: 50px;
+    margin: 50px auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circlediv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:rgb(18, 168, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.permission{
+    text-align: center;
+}
+
+.permission h2{
+    margin-bottom: 8px;
+}
+
+.grant{
+    background-color: rgb(12, 175, 74);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.active{
+    scale: 0;
+}
+/* Weather CSS */
+
+.weather{
+    /* scale: 1; */
+    position: absolute;
+    margin-top: 50px;
+    margin: 50px auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.yourWeather{
+    position: relative;
+}
+
+.details1{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding: 50px; */
+    height: 20vh;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.details2{
+    display: flex;
+    width: 40vw;
+    justify-content: space-around;
+}
+
+.windspeed{
+    height: 12vh;
+    width: 12vw;
+    background-color: rgba(244, 255, 255, 0.479);
+    border-radius: 8px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
+    /* padding: 50px; */
+}
+
+.humidity{
+    height: 12vh;
+    width: 12vw;
+    background-color: rgba(244, 255, 255, 0.479);
+    border-radius: 8px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.clouds{
+    height: 12vh;
+    width: 12vw;
+    background-color: rgba(244, 255, 255, 0.479);
+    border-radius: 8px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.windspeed h2{
+    font-size: 80%;
+}
+
+.humidity h2{
+    font-size: 80%;
+}
+
+.clouds h2{
+    font-size: 80%;
+}
+
+.cityName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.flagicon {
+    margin-left: 2vw;
+}
+
+/* Search Weather */
+
+.searchWeather{
+    /* scale: 1; */
+    position: absolute;
+    margin-top: 50px;
+    margin: 50px auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.circle2{
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color:rgb(18, 168, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchWeather input{
+    appearance: none;
+    height: 30px;
+    background-color: rgba(244, 255, 255, 0.479);
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+.searchWeather input::placeholder{
+    color: white;
+  
+}
+
+/* .weatherInfo, .searchWeather {
+    display: none; 
+  }
+   */
+
+
+.loader{
+    /* scale: 1; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.tabprop{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 8px;
+}
